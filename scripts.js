@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+    document.addEventListener('DOMContentLoaded', function() {
     var dropdownBtn = document.querySelector('.dropdown-btn');
     var dropdownContent = document.querySelector('.dropdown-content');
     

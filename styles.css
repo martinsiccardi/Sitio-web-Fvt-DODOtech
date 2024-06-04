@@ -62,11 +62,20 @@ nav ul li a:hover::after {
     transform-origin: bottom left;
 }
 
-.hero {
-    background: url('hero.jpg') no-repeat center center/cover;
-    height: 400px;
+.hero{
+    background: url('./images/Logo2.png') no-repeat center center/cover;
+    height: 1000px;
     position: relative;
     display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+.hero2 {
+    height: 400px;
+    position: relative;
+    display: block;
     justify-content: center;
     align-items: center;
     color: #fff;
@@ -76,6 +85,22 @@ nav ul li a:hover::after {
 .hero .overlay, .hero2 .overlay{
     background-color: rgba(0, 0, 0, 0.5);
     padding: 20px;
+}
+
+.hero2 h1, .hero2 ul{
+    font-size: 40px;
+    margin: 50px 0 50px 0;
+}
+
+.hero2 nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+.hero2 img{
+    width: 130px;
 }
 
 .hero h1 {
