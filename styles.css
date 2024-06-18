@@ -127,6 +127,10 @@ nav ul li a:hover::after {
     font-size: 36px;
 }
 
+.sales h2, .events h2, .blog h2 {
+    font-size: 24px;
+}
+
 .sales p, .events p, .blog p {
     font-size: 20px;
 }
