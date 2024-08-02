@@ -63,72 +63,82 @@ nav ul li a:hover::after {
     transform-origin: bottom left;
 }
 
-/* Hero Section */
-.hero {
-    background: url('./images/Logo2.png') no-repeat center center/cover;
-    height: 1000px;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
+/* Sales Section */
+.sales {
+    padding: 50px 20px;
     text-align: center;
+    background-color: #f5f5f5;
 }
 
-.hero .overlay {
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 20px;
+.sales h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
 }
 
-.hero h1 {
-    font-size: 48px;
-    margin: 0;
-}
-
-.hero h2 {
-    font-size: 32px;
-    margin: 0;
-}
-
-.hero p {
+.sales h2 {
     font-size: 24px;
+    color: #FFD700; /* Amarillo para los títulos */
+    margin: 20px 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: 2px solid #FFD700;
+    border-radius: 5px;
+    background-color: #fff;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.sales h2:hover {
+    background-color: #FFD700;
+    color: #fff;
+    border-color: #fff;
+}
+
+.sales p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
     margin: 10px 0;
 }
 
-/* Hero2 Section */
-.hero2 {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-}
-
-.hero2 .overlay {
-    background-color: rgba(0, 0, 0, 0.5);
+.service-description {
+    display: none; /* Ocultar el contenido inicialmente */
+    text-align: left;
+    margin: 20px 0;
     padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
 }
 
-.hero2 h1 {
-    font-size: 36px;
-    margin: 0 0 20px;
+/* Reemplazar los puntos de la lista con íconos */
+.service-description ul {
+    list-style: none; /* Eliminar los puntos predeterminados */
+    margin-left: 0; /* Eliminar el margen izquierdo */
+    padding-left: 0; /* Eliminar el padding izquierdo */
 }
 
-.hero2 nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0;
+.service-description li {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 10px;
+    position: relative; /* Necesario para posicionar el ícono */
+    padding-left: 30px; /* Espacio para el ícono */
 }
 
-.hero2 img {
-    width: 130px;
-    margin: 10px;
-    transition: transform 0.3s;
-}
-
-.hero2 img:hover {
-    transform: scale(1.1);
+.service-description li::before {
+    content: "\f08d"; /* Código del ícono de Font Awesome thumbtack */
+    font-family: "Font Awesome 5 Free"; /* Fuente de Font Awesome */
+    font-weight: 900; /* Necesario para los íconos de Font Awesome */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px; /* Tamaño del ícono */
+    color: #FFD700; /* Color del ícono */
 }
 
 /* Footer */
@@ -159,7 +169,7 @@ nav ul li a:hover::after {
 }
 
 .footer-middle {
-    margin-left: 0px;
+    margin-left: 30px;
 }
 
 .footer-left h3, .footer-middle h3, .footer-right h3 {
@@ -207,9 +217,7 @@ nav ul li a:hover::after {
     nav ul li {
         margin: 10px 0;
     }
-}
 
-@media (max-width: 768px) {
     .footer-container {
         flex-direction: column;
         align-items: center;
@@ -218,50 +226,36 @@ nav ul li a:hover::after {
     .footer-middle {
         margin-left: 0;
     }
+}
 
-    .hero {
-        height: 600px;
-    }
-
-    .hero h1 {
-        font-size: 36px;
-    }
-
-    .hero h2 {
-        font-size: 24px;
-    }
-
-    .hero p {
-        font-size: 18px;
-    }
-
-    .hero2 h1 {
+@media (max-width: 768px) {
+    .sales h1 {
         font-size: 28px;
     }
 
-    .hero2 img {
-        width: 100px;
+    .sales h2 {
+        font-size: 20px;
+    }
+
+    .sales p {
+        font-size: 18px;
     }
 }
 
 @media (max-width: 480px) {
-    .hero h1 {
-        font-size: 28px;
-    }
-
-    .hero h2 {
-        font-size: 20px;
-    }
-
-    .hero p {
-        font-size: 16px;
-    }
-
-    .hero2 h1 {
+    .sales h1 {
         font-size: 24px;
     }
 
-    .hero2 img {
-        width: 80px;
+    .sales h2 {
+        font-size: 18px;
+    }
+
+    .sales p {
+        font-size: 16px;
+    }
+
+    .footer-container {
+        padding: 0 10px;
     }
 }

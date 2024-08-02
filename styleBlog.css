@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+/* Blog Section */
+.blog h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Dropdown Button */
+.dropdown-container {
+    margin: 20px 0;
+}
+
+.dropdown-btn {
+    background-color: #f2f2f2;
+    border: none;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    text-align: left;
+    transition: background-color 0.3s;
+}
+
+.dropdown-btn:hover {
+    background-color: #ddd;
+}
+
+/* Dropdown Content */
+.dropdown-content {
+    display: none;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.product-item {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.product-item:last-child {
+    border-bottom: none;
+}
+
+.product-item h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #FFD700; /* Amarillo para los títulos */
+}
+
+.product-item p {
+    margin: 5px 0 0;
+    color: #555;
+}
+
+/* Show Dropdown Content on Button Click */
+.dropdown-btn.active + .dropdown-content {
+    display: block;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+.footer-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-section h3 {
+    margin-top: 0;
+    color: #FFD700; /* Amarillo para los títulos del footer */
+}
+
+.footer-section p,
+.footer-section a {
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-section a {
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    text-decoration: underline;
+}

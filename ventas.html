@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Soluciones</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="script.js"></script>
+    <link rel="stylesheet" href="styleVentas.css">
+    <script src="scripts.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <header>
@@ -19,6 +20,7 @@
                     <li><a href="ventas.html" class="menu-link">Servicios</a></li>
                     <li><a href="eventos.html" class="menu-link">Nosotros</a></li>
                     <li><a href="blog.html" class="menu-link">Blog</a></li>
+                    <li><a href="login.html" class="menu-link">Iniciar Sesión</a></li>
                 </ul>
             </nav>
         </div>
@@ -27,21 +29,94 @@
         <section class="sales">
             <h1>Servicios</h1>
             <hr>
-            <h2>CEO (Optimización en Motores de Búsqueda)</h2>
-            <p>Mejora del posicionamiento orgánico.</p>
+            <div class="service-item">
+                <h2 id="seo">SEO (Optimización en Motores de Búsqueda) <i class="fas fa-chevron-down toggle-icon"></i></h2>
+                <div class="service-description">
+                    <p>Mejora del posicionamiento orgánico.</p>
+                    <p><strong>Ventajas:</strong></p>
+                    <ul>
+                        <li>Mayor visibilidad en los motores de búsqueda.</li>
+                        <li>Incremento del tráfico web cualificado.</li>
+                        <li>Coste bajo comparado con PPC.</li>
+                    </ul>
+                </div>
+            </div>
             <hr>
-            <h2>PPC (Pago Por Clic)</h2>
-            <p>Publicidad pagada para generar leads y conversiones.</p>
+            <div class="service-item">
+                <h2 id="ppc">PPC (Pago Por Clic) <i class="fas fa-chevron-down toggle-icon"></i></h2>
+                <div class="service-description">
+                    <p>Publicidad pagada para generar leads y conversiones.</p>
+                    <p><strong>Ventajas:</strong></p>
+                    <ul>
+                        <li>Resultados inmediatos.</li>
+                        <li>Control total sobre el presupuesto.</li>
+                        <li>Segmentación precisa del público.</li>
+                    </ul>
+                </div>
+            </div>
             <hr>
-            <h2>Marketing de Contenidos</h2>
-            <p>Creación y gestión de contenido relevante.</p>
+            <div class="service-item">
+                <h2 id="content-marketing">Marketing de Contenidos <i class="fas fa-chevron-down toggle-icon"></i></h2>
+                <div class="service-description">
+                    <p>Creación y gestión de contenido relevante.</p>
+                    <p><strong>Ventajas:</strong></p>
+                    <ul>
+                        <li>Establecimiento de autoridad en la industria.</li>
+                        <li>Mejora la retención de clientes.</li>
+                        <li>Genera confianza y lealtad.</li>
+                    </ul>
+                </div>
+            </div>
             <hr>
-            <h2>Redes Sociales</h2>
-            <p>Estrategias para aumentar la presencia y el engagement.</p>
+            <div class="service-item">
+                <h2 id="social-media">Redes Sociales <i class="fas fa-chevron-down toggle-icon"></i></h2>
+                <div class="service-description">
+                    <p>Estrategias para aumentar la presencia y el engagement.</p>
+                    <p><strong>Ventajas:</strong></p>
+                    <ul>
+                        <li>Interacción directa con el público.</li>
+                        <li>Incremento de la notoriedad de la marca.</li>
+                        <li>Promociones y campañas virales.</li>
+                    </ul>
+                </div>
+            </div>
             <hr>
-            <h2>Email Marketing</h2>
-            <p>Campañas de email para mantener a la audiencia comprometida.</p>
+            <div class="service-item">
+                <h2 id="email-marketing">Email Marketing <i class="fas fa-chevron-down toggle-icon"></i></h2>
+                <div class="service-description">
+                    <p>Campañas de email para mantener a la audiencia comprometida.</p>
+                    <p><strong>Ventajas:</strong></p>
+                    <ul>
+                        <li>Comunicación directa con los clientes.</li>
+                        <li>Alta tasa de retorno de inversión.</li>
+                        <li>Segmentación avanzada de audiencias.</li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section footer-left">
+                <h3>Sobre Nosotros</h3>
+                <p>Somos una agencia de marketing digital dedicada a optimizar el rendimiento de tu negocio con estrategias efectivas y personalizadas.</p>
+            </div>
+            <div class="footer-section footer-middle">
+                <h3>Contacto</h3>
+                <div class="contact-info">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <a href="mailto:contacto@dodo-tech.com">contacto@dodo-tech.com</a>
+                </div>
+                <div class="contact-info">
+                    <i class="fas fa-phone-alt contact-icon"></i>
+                    <p>+34 123 456 789</p>
+                </div>
+            </div>
+            <div class="footer-section footer-right">
+                <h3>Derechos de Autor</h3>
+                <p>&copy; 2024 Dodo Tech. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
